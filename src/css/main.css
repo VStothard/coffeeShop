@@ -367,6 +367,32 @@ textarea {
 * {
   box-sizing: border-box; }
 
+body {
+  background: #F7ECE1; }
+
+h1,
+h2,
+p {
+  font-family: 'Raleway', arial, helvetica, sans-serif;
+  color: #343434;
+  margin: 4px 0; }
+
+ul {
+  padding: 20px 0 0;
+  margin: 0; }
+  ul li {
+    display: block;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    width: 100px; }
+
+ul.hover li:hover {
+  color: #E5446D; }
+
+.bold {
+  font-weight: bold; }
+
 .main-container {
   margin: 0 auto;
   padding: 40px;
@@ -378,6 +404,7 @@ textarea {
 nav {
   background: rgba(254, 254, 254, 0.8);
   float: right;
+  padding: 20px;
   height: 100%;
   width: 50%; }
   @media (max-width: 769px) {
@@ -385,7 +412,8 @@ nav {
       float: none;
       height: 100px;
       width: 100%;
-      position: fixed; } }
+      position: fixed;
+      padding: 0; } }
 
 .navigation {
   display: block;
@@ -405,7 +433,7 @@ nav {
   background-image: url("../img/coffee.jpeg");
   background-position: top center;
   background-size: cover;
-  height: 100vh;
+  height: 88vh;
   overflow: auto; }
 
 .feature-row {
@@ -490,7 +518,7 @@ nav {
   color: white;
   display: block;
   margin-top: 40px;
-  height: 300px;
+  height: 350px;
   text-align: center; }
 
 .coffee-bar-overlay {

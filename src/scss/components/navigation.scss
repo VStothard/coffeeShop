@@ -1,6 +1,7 @@
 nav {
   background: rgba(254, 254, 254, 0.8);
   float:right;
+  padding: 20px;
   height: 100%;
   width: 50%;
   @media (max-width: $tablet) {
@@ -8,6 +9,7 @@ nav {
     height: 100px;
     width: 100%;
     position: fixed;
+    padding: 0;
   }
 }
 
