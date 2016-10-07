@@ -1,0 +1,17 @@
+.blog-posts {
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.post-cont {
+  width: 48%;
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}

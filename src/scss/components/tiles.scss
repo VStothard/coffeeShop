@@ -1,0 +1,79 @@
+.feature-row {
+  margin: 25px 0px;
+  &:first-child {
+    margin-top: 50px;
+    @media (max-width: $tablet) {
+      margin: 0;
+    }
+  }
+  &:last-child {
+    margin-bottom:25px;
+    @media (max-width: $tablet) {
+      margin: 0;
+    }
+  }
+  @media (max-width: $tablet) {
+    margin: 0;
+  }
+}
+
+.box {
+  height: 350px;
+  width: 33.333%;
+  float: left;
+  // transition: width 0.5s;
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
+}
+
+
+.box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  &-1 {
+    background-image: url('../img/wall.jpg');
+  }
+  &-2 {
+    background-image: url('../img/back.jpg');
+  }
+  &-3 {
+    background-image: url('../img/building.jpg');
+  }
+  &-4 {
+    background-image: url('../img/chilli.jpg');
+  }
+  &-5 {
+    background-image: url('../img/paint.jpg');
+  }
+  &-6 {
+    background-image: url('../img/london.jpg');
+  }
+
+  @media (max-width: $tablet) {
+    background-size: cover;
+  }
+}
+
+.box-overlay {
+  color: white;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0);
+  padding: 120px;
+  text-align: center;
+  transition: background 0.8s;
+  h3, p {
+    opacity: 0;
+    transition: opacity 0.8s;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.8s;
+    h3, p {
+      opacity: 1;
+      transition: opacity 0.8s;
+    }
+  }
+}
